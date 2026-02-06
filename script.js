@@ -1,23 +1,4 @@
-// ===== Navbar Scroll =====
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-// ===== Cursor Glow =====
-const cursorGlow = document.getElementById('cursorGlow');
-
-if (window.matchMedia('(pointer: fine)').matches) {
-    document.addEventListener('mousemove', (e) => {
-        cursorGlow.style.left = e.clientX + 'px';
-        cursorGlow.style.top = e.clientY + 'px';
-    });
-} else {
-    cursorGlow.style.display = 'none';
-}
-
-// ===== Smooth Scroll =====
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -28,73 +9,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== Intersection Observer Animations =====
+// Navbar scroll effect (optional subtle shadow)
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+    } else {
+        navbar.style.boxShadow = 'none';
+    }
+});
+
+// Animate elements on scroll
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -80px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
-const animateOnScroll = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            animateOnScroll.unobserve(entry.target);
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Add animation classes
-const style = document.createElement('style');
-style.textContent = `
-    .fade-up {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .fade-up.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .stagger > * {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .stagger.visible > *:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
-    .stagger.visible > *:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
-    .stagger.visible > *:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
-    .stagger.visible > *:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
-    .stagger.visible > *:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
-    .stagger.visible > *:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
-`;
-document.head.appendChild(style);
-
-// Apply to elements
-document.querySelectorAll('.section-header, .about-header, .about-main, .about-stats, .reach-content').forEach(el => {
-    el.classList.add('fade-up');
-    animateOnScroll.observe(el);
+// Apply fade-up animation to sections
+document.querySelectorAll('.about-content, .about-values, .service-card, .service-small, .commodity, .region, .cta-content').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
 });
 
-document.querySelectorAll('.expertise-grid, .commodities-table, .regions-grid').forEach(el => {
-    el.classList.add('stagger');
-    animateOnScroll.observe(el);
+// Stagger animation for grid items
+document.querySelectorAll('.commodities-grid, .services-secondary').forEach(grid => {
+    const items = grid.children;
+    Array.from(items).forEach((item, index) => {
+        item.style.transitionDelay = `${index * 0.1}s`;
+    });
 });
-
-// ===== Parallax Effect =====
-const heroGlow = document.querySelector('.hero-glow');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    if (heroGlow && scrolled < window.innerHeight) {
-        heroGlow.style.transform = `translateX(-50%) translateY(${scrolled * 0.2}px)`;
-    }
-});
-
-// ===== Console =====
-console.log('%c◆ APGL Group', 'color: #c9a962; font-size: 20px; font-weight: bold;');
-console.log('%c  Critical Minerals Trading', 'color: #888; font-size: 12px;');
