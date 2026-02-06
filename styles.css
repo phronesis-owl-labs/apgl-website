@@ -773,13 +773,8 @@ h5 {
         flex-direction: column;
     }
     
-    .floating-contact span {
-        display: none;
-    }
-    
     .floating-contact {
-        padding: 16px;
-        border-radius: 50%;
+        display: none;
     }
 }
 
