@@ -194,16 +194,15 @@ h5 {
 
 .logo {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: 0.15em;
+    letter-spacing: -0.01em;
 }
 
 .logo span {
     font-weight: 400;
     color: var(--text-tertiary);
-    letter-spacing: 0.08em;
-    margin-left: 0.25em;
+    margin-left: 0.35em;
 }
 
 .nav-links {
@@ -379,12 +378,13 @@ h5 {
 
 .value-card {
     display: flex;
-    gap: 18px;
+    gap: 20px;
     padding: 24px;
     background: var(--bg-secondary);
     border-radius: 10px;
     border: 1px solid var(--border-light);
     transition: var(--transition);
+    align-items: flex-start;
 }
 
 .value-card:hover {
@@ -392,29 +392,21 @@ h5 {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
 }
 
-.value-icon {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent);
-    border-radius: 8px;
+.value-number {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.02em;
     flex-shrink: 0;
+    padding-top: 2px;
 }
 
-.value-icon svg {
-    width: 22px;
-    height: 22px;
-    color: white;
-}
-
-.value-card h4 {
-    margin-bottom: 4px;
+.value-text h4 {
+    margin-bottom: 6px;
     color: var(--text-primary);
 }
 
-.value-card p {
+.value-text p {
     font-size: 0.875rem;
     color: var(--text-secondary);
     margin: 0;
