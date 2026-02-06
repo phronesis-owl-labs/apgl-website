@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
     <!-- Navigation -->
@@ -25,18 +25,30 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video -->
     <section class="hero">
-        <div class="container">
+        <div class="hero-video-wrapper">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="https://videos.pexels.com/video-files/17627281/17627281-hd_1920_1080_24fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-container">
             <div class="hero-content">
                 <h1>Connecting vital resources to global markets</h1>
                 <p>APGL Group is a trading company specializing in the sourcing, marketing, and distribution of critical minerals. We connect producers in Central Asia with industrial consumers worldwide.</p>
                 <div class="hero-ctas">
                     <a href="#contact" class="btn btn-primary">Partner With Us</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                    <a href="#about" class="btn btn-secondary-light">Learn More</a>
                 </div>
             </div>
-            <div class="hero-stats">
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
                 <div class="stat">
                     <span class="stat-number">15+</span>
                     <span class="stat-label">Years Combined Experience</span>
@@ -66,14 +78,23 @@
                 </div>
                 <div class="about-values">
                     <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
                         <h4>Reliability</h4>
                         <p>Consistent supply from verified sources with full traceability and quality assurance.</p>
                     </div>
                     <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
                         <h4>Expertise</h4>
                         <p>Deep knowledge of Central Asian markets, logistics, and regulatory environments.</p>
                     </div>
                     <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
                         <h4>Partnership</h4>
                         <p>Long-term relationships built on trust, transparency, and mutual success.</p>
                     </div>
@@ -91,7 +112,7 @@
                 <p>From sourcing to delivery, we handle the complexity so you don't have to.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card service-primary">
+                <div class="service-card">
                     <div class="service-number">01</div>
                     <h3>Sourcing & Trading</h3>
                     <p>Direct relationships with mining operations across Central Asia give us access to high-quality mineral concentrates and refined metals at competitive prices.</p>
@@ -102,7 +123,7 @@
                         <li>Contract negotiation</li>
                     </ul>
                 </div>
-                <div class="service-card service-primary">
+                <div class="service-card">
                     <div class="service-number">02</div>
                     <h3>Logistics & Delivery</h3>
                     <p>We manage complex supply chains spanning rail, road, and sea — moving commodities from landlocked origins to global destinations.</p>
@@ -190,7 +211,7 @@
     <section class="global" id="global">
         <div class="container">
             <div class="global-content">
-                <div class="section-label">Global Reach</div>
+                <div class="section-label light">Global Reach</div>
                 <h2>We operate across a global network</h2>
                 <p class="lead">Our business connects producers in strategic mining regions with industrial consumers worldwide.</p>
                 <div class="regions">
@@ -255,6 +276,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
