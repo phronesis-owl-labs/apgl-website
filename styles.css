@@ -774,6 +774,13 @@ h5 {
     }
     
     .floating-contact {
+        bottom: 100px;
+        right: 16px;
+        padding: 12px;
+        border-radius: 50%;
+    }
+    
+    .floating-contact span {
         display: none;
     }
 }
