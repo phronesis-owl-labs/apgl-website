@@ -3,36 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="APGL Group - Connecting vital mineral resources to global markets. Strategic sourcing and trading of critical minerals from Central Asia.">
+    <meta name="description" content="APGL Group - Strategic sourcing and trading of critical minerals from Central Asia. Zinc, copper, lead and more delivered to global markets.">
     <title>APGL Group | Critical Minerals Trading</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231e40af'/><text x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>A</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">APGL <span>Group</span></a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">What We Do</a></li>
-                <li><a href="#commodities">Commodities</a></li>
-                <li><a href="#global">Global Reach</a></li>
-                <li><a href="#contact" class="btn btn-nav btn-nav-mobile">Contact Us</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-nav btn-nav-desktop">Contact Us</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#commodities">Commodities</a>
+                <a href="#global">Global Reach</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-nav">Get in Touch</a>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-links">
+                    <a href="#about" class="mobile-link">
+                        <span class="mobile-link-label">About</span>
+                        <span class="mobile-link-desc">Who we are and what we stand for</span>
+                    </a>
+                    <a href="#services" class="mobile-link">
+                        <span class="mobile-link-label">Services</span>
+                        <span class="mobile-link-desc">Sourcing, logistics, and trade finance</span>
+                    </a>
+                    <a href="#commodities" class="mobile-link">
+                        <span class="mobile-link-label">Commodities</span>
+                        <span class="mobile-link-desc">Zinc, copper, lead, silver, and more</span>
+                    </a>
+                    <a href="#global" class="mobile-link">
+                        <span class="mobile-link-label">Global Reach</span>
+                        <span class="mobile-link-desc">Our network across Central Asia and beyond</span>
+                    </a>
+                    <a href="#contact" class="mobile-link">
+                        <span class="mobile-link-label">Contact</span>
+                        <span class="mobile-link-desc">Partner with us</span>
+                    </a>
+                </div>
+                <div class="mobile-menu-footer">
+                    <a href="mailto:contact@apglgroup.com" class="btn btn-primary btn-large btn-full">Get in Touch</a>
+                    <p class="mobile-menu-email">contact@apglgroup.com</p>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Section with Video -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-video-wrapper">
             <img class="hero-fallback" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80" alt="Mining operations" loading="eager">
@@ -43,49 +75,46 @@
         </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="hero-badge">Critical Minerals Trading</div>
-                <h1>Connecting vital resources to global markets</h1>
-                <p>APGL Group specializes in the sourcing, marketing, and distribution of critical minerals — connecting producers in Central Asia with industrial consumers worldwide.</p>
+                <p class="hero-purpose">Our Purpose</p>
+                <h1>Responsibly sourcing critical minerals that power modern industry</h1>
+                <p class="hero-sub">APGL Group connects producers in Central Asia with industrial consumers worldwide — managing complex supply chains for zinc, copper, and other strategic minerals.</p>
                 <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary">Partner With Us</a>
-                    <a href="#about" class="btn btn-secondary-light">Learn More</a>
+                    <a href="#services" class="btn btn-primary btn-large">Explore Our Services</a>
+                    <a href="#about" class="btn btn-ghost btn-large">About APGL</a>
                 </div>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
+        <div class="hero-scroll">
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- Stats Bar -->
+    <!-- Stats -->
     <section class="stats-bar">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat">
-                    <span class="stat-number" data-count="15">0</span>
-                    <span class="stat-suffix">+</span>
+                    <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Years Combined Experience</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-count="12">0</span>
-                    <span class="stat-suffix">+</span>
+                    <span class="stat-number" data-count="12">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Commodities Traded</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-count="20">0</span>
-                    <span class="stat-suffix">+</span>
+                    <span class="stat-number" data-count="20">0</span><span class="stat-suffix">+</span>
                     <span class="stat-label">Countries Served</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-label">About Us</div>
             <div class="about-grid">
                 <div class="about-content">
+                    <p class="section-label">About Us</p>
                     <h2>Enabling the efficient flow of critical minerals</h2>
                     <p class="lead">We manage complex supply chains to move minerals and metals from where they are produced to where they are needed most.</p>
                     <p>With deep expertise in Central Asian markets and established relationships with mining operations across Tajikistan, Kazakhstan, and Uzbekistan, APGL Group provides reliable sourcing solutions for industries that power modern life.</p>
@@ -98,7 +127,7 @@
                         </div>
                         <div class="value-text">
                             <h4>Reliability</h4>
-                            <p>Consistent supply from verified sources with full traceability and quality assurance.</p>
+                            <p>Consistent supply from verified sources with full traceability and quality assurance at every step.</p>
                         </div>
                     </div>
                     <div class="value-card">
@@ -107,7 +136,7 @@
                         </div>
                         <div class="value-text">
                             <h4>Expertise</h4>
-                            <p>Deep knowledge of Central Asian markets, logistics, and regulatory environments.</p>
+                            <p>Deep knowledge of Central Asian markets, logistics corridors, and regulatory environments.</p>
                         </div>
                     </div>
                     <div class="value-card">
@@ -116,7 +145,7 @@
                         </div>
                         <div class="value-text">
                             <h4>Partnership</h4>
-                            <p>Long-term relationships built on trust, transparency, and mutual success.</p>
+                            <p>Long-term relationships built on trust, transparency, and mutual commercial success.</p>
                         </div>
                     </div>
                 </div>
@@ -124,21 +153,51 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">What We Do</div>
+                <p class="section-label">What We Do</p>
                 <h2>End-to-end commodity solutions</h2>
                 <p>From sourcing to delivery, we handle the complexity so you don't have to.</p>
             </div>
+
+            <!-- Process Flow -->
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="process-num">01</div>
+                    <h4>Sourcing</h4>
+                    <p>Mine-site procurement across Central Asia</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="process-num">02</div>
+                    <h4>Verification</h4>
+                    <p>Quality assaying & compliance checks</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="process-num">03</div>
+                    <h4>Logistics</h4>
+                    <p>Multimodal transport coordination</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="process-num">04</div>
+                    <h4>Delivery</h4>
+                    <p>To industrial consumers globally</p>
+                </div>
+            </div>
+
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <div class="service-header-row">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </div>
+                        <h3>Sourcing & Trading</h3>
                     </div>
-                    <h3>Sourcing & Trading</h3>
-                    <p>Direct relationships with mining operations across Central Asia give us access to high-quality mineral concentrates and refined metals at competitive prices.</p>
+                    <p>Direct relationships with mining operations give us access to high-quality mineral concentrates and refined metals at competitive prices.</p>
                     <ul class="service-list">
                         <li>Mine-direct procurement</li>
                         <li>Quality verification & assaying</li>
@@ -147,10 +206,12 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <div class="service-header-row">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3>Logistics & Delivery</h3>
                     </div>
-                    <h3>Logistics & Delivery</h3>
                     <p>We manage complex supply chains spanning rail, road, and sea — moving commodities from landlocked origins to global destinations.</p>
                     <ul class="service-list">
                         <li>Multimodal transport coordination</li>
@@ -162,35 +223,26 @@
             </div>
             <div class="services-secondary">
                 <div class="service-small">
-                    <div class="service-small-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </div>
                     <h4>Trade Finance</h4>
                     <p>Letters of credit, pre-export financing, and working capital solutions to keep supply chains moving.</p>
                 </div>
                 <div class="service-small">
-                    <div class="service-small-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                    </div>
                     <h4>Market Intelligence</h4>
                     <p>Real-time pricing insights and strategic advisory for optimal market positioning.</p>
                 </div>
                 <div class="service-small">
-                    <div class="service-small-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    </div>
-                    <h4>Compliance</h4>
+                    <h4>Compliance & ESG</h4>
                     <p>Full regulatory compliance including sanctions screening, origin verification, and ESG standards.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Commodities Section -->
+    <!-- Commodities -->
     <section class="commodities" id="commodities">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Our Focus</div>
+                <p class="section-label">Our Focus</p>
                 <h2>Critical minerals we trade</h2>
                 <p>Strategic materials essential for industry, infrastructure, and the energy transition.</p>
             </div>
@@ -259,95 +311,58 @@
         </div>
     </section>
 
-    <!-- Trade Routes Section -->
-    <section class="trade-routes">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Supply Chain</div>
-                <h2>From source to destination</h2>
-                <p>We manage every step of the journey.</p>
-            </div>
-            <div class="route-flow">
-                <div class="route-step">
-                    <div class="route-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-                    </div>
-                    <h4>Extraction</h4>
-                    <p>Mine-site sourcing across Central Asia</p>
-                </div>
-                <div class="route-arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </div>
-                <div class="route-step">
-                    <div class="route-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-                    </div>
-                    <h4>Verification</h4>
-                    <p>Quality assaying & compliance checks</p>
-                </div>
-                <div class="route-arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </div>
-                <div class="route-step">
-                    <div class="route-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                    </div>
-                    <h4>Logistics</h4>
-                    <p>Multimodal transport coordination</p>
-                </div>
-                <div class="route-arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </div>
-                <div class="route-step">
-                    <div class="route-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    </div>
-                    <h4>Delivery</h4>
-                    <p>To industrial consumers worldwide</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Section -->
+    <!-- Global -->
     <section class="global" id="global">
         <div class="container">
-            <div class="global-content">
-                <div class="section-label light">Global Reach</div>
-                <h2>We operate across a global network</h2>
-                <p class="lead">Our business connects producers in strategic mining regions with industrial consumers worldwide.</p>
+            <div class="global-grid">
+                <div class="global-content">
+                    <p class="section-label light">Global Reach</p>
+                    <h2>Connecting continents through trade</h2>
+                    <p class="lead">Our business bridges strategic mining regions with the world's largest industrial markets.</p>
+                </div>
                 <div class="regions">
                     <div class="region">
-                        <div class="region-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <div class="region-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         </div>
-                        <h4>Source Markets</h4>
-                        <p>Tajikistan • Kazakhstan • Uzbekistan</p>
+                        <div>
+                            <h4>Source Markets</h4>
+                            <p>Tajikistan · Kazakhstan · Uzbekistan</p>
+                        </div>
                     </div>
                     <div class="region">
-                        <div class="region-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <div class="region-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
-                        <h4>Destination Markets</h4>
-                        <p>China • South Korea • Japan • Germany • Netherlands • United States</p>
+                        <div>
+                            <h4>Destination Markets</h4>
+                            <p>China · South Korea · Japan · Germany · Netherlands · United States</p>
+                        </div>
+                    </div>
+                    <div class="region">
+                        <div class="region-marker">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                        </div>
+                        <div>
+                            <h4>Trade Corridors</h4>
+                            <p>Rail via China · Maritime via Bandar Abbas · Road via Uzbekistan</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- CTA -->
     <section class="cta" id="contact">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to discuss your requirements?</h2>
                 <p>Whether you're a producer seeking market access or a buyer looking for reliable supply, we'd like to hear from you.</p>
-                <div class="cta-buttons">
-                    <a href="mailto:contact@apglgroup.com" class="btn btn-primary btn-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        Get in Touch
-                    </a>
-                </div>
+                <a href="mailto:contact@apglgroup.com" class="btn btn-primary btn-large">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Get in Touch
+                </a>
                 <p class="cta-email">contact@apglgroup.com</p>
             </div>
         </div>
@@ -365,7 +380,7 @@
                     <div class="footer-col">
                         <h5>Company</h5>
                         <a href="#about">About</a>
-                        <a href="#services">What We Do</a>
+                        <a href="#services">Services</a>
                         <a href="#commodities">Commodities</a>
                         <a href="#global">Global Reach</a>
                     </div>
@@ -382,20 +397,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 APGL Group LLC. All rights reserved.</p>
+                <p>&copy; 2026 APGL Group LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Contact Button -->
+    <!-- Floating Contact -->
     <a href="mailto:contact@apglgroup.com" class="floating-contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         <span>Get in Touch</span>
     </a>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>
